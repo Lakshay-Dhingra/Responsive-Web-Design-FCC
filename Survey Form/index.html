@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sample Survey Form</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <header class="header text-center">
+            <h1 id="title">Sample Survey Form</h1>
+            <p id="description" class="description">
+                Fill out this form to help us to know more about you!
+            </p>
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter Your Name" required />
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter Your Email"
+                    required />
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="number">Age</label>
+                <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Enter Your Age" />
+            </div>
+            <div class="form-group">
+                <p> Which continent you belong to?</p>
+                <select id="dropdown" name="continent" class="form-control" required>
+                    <option disabled selected value>Select</option>
+                    <option value="Asia">Asia</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Europe">Europe</option>
+                    <option value="North America">North America</option>
+                    <option value="South America">South America</option>
+                    <option value="Africa">Africa</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>What is your gender?</p>
+                <label><input name="gender" value="male" type="radio" class="input-radio"/>Male</label>
+                <label><input name="gender" value="female" type="radio" class="input-radio" />Female</label>
+                <label><input name="gender" value="transgender" type="radio" class="input-radio" />Transgender</label>
+                <label><input name="gender" value="NA" type="radio" class="input-radio"  checked/>I don't want to disclose</label>
+            </div>
+
+            <div class="form-group">
+                <p>
+                    Which of these you have an intrest in?
+                </p>
+
+                <label><input name="intrest" value="computer-science" type="checkbox" class="input-checkbox" />Computer Science</label>
+                <label><input name="intrest" value="mathematics" type="checkbox" class="input-checkbox" />Mathematics</label>
+                <label><input name="intrest" value="gk" type="checkbox" class="input-checkbox" />General Knowledge</label>
+                <label><input name="intrest" value="puzzle-solving" type="checkbox" class="input-checkbox" />Puzzle Solving</label>
+                <label><input name="intrest" value="applied-sciences" type="checkbox" class="input-checkbox" />Applied Sciences</label>
+                <label><input name="intrest" value="social-sciences" type="checkbox" class="input-checkbox" />Social Sciences</label>
+                <label><input name="prefer" value="arts" type="checkbox" class="input-checkbox" />Arts</label>
+            </div>
+
+            <div class="form-group">
+                <p>Anything you want to ask or share with us</p>
+                <textarea id="comments" class="input-textarea" name="comment"
+                    placeholder="Enter your thoughts here..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">
+                    Submit
+                </button>
+            </div>
+        </form>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+
+</body>
+
+</html>
